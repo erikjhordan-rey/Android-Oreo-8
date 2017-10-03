@@ -15,9 +15,15 @@
  */
 package io.github.erikcaffrey.android_oreo
 
+import android.graphics.Typeface
 import android.os.Bundle
+import android.os.Handler
+import android.os.HandlerThread
 import android.support.design.widget.BottomNavigationView
+import android.support.v4.provider.FontRequest
+import android.support.v4.provider.FontsContractCompat
 import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -25,7 +31,7 @@ class MainActivity : AppCompatActivity() {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                message.setText(R.string.title_home)
+                message.setText(R.string.title_fonts)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_dashboard -> {
@@ -44,6 +50,30 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val fontRequest = FontRequest("com.google.android.gms.fonts",
+                "com.google.android.gms", "Rock Salt", R.array.com_google_android_gms_fonts_certs)
+
+        val fontCallback = object : FontsContractCompat.FontRequestCallback() {
+            override fun onTypefaceRetrieved(typeface: Typeface?) {
+                super.onTypefaceRetrieved(typeface)
+                message.typeface = typeface
+            }
+
+            override fun onTypefaceRequestFailed(reason: Int) {
+                super.onTypefaceRequestFailed(reason)
+                Toast.makeText(this@MainActivity, "fails: "+ reason, Toast.LENGTH_LONG).show()
+            }
+        }
+
+        val handlerThread = HandlerThread("fonts")
+        handlerThread.start()
+        val handler = Handler(handlerThread.looper)
+
+        FontsContractCompat.requestFont(this,fontRequest, fontCallback, handler)
+
+
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
+
+
 }
