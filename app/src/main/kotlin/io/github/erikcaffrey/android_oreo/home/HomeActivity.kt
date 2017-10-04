@@ -13,12 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.github.erikcaffrey.android_oreo
+package io.github.erikcaffrey.android_oreo.home
 
 import android.support.design.widget.BottomNavigationView.OnNavigationItemSelectedListener
 import android.support.v4.app.Fragment
 import android.view.MenuItem
 import erikjhordanrey.base_components.view.BaseActivity
+import io.github.erikcaffrey.android_oreo.R
+import io.github.erikcaffrey.android_oreo.autosizing.AutosizingFragment
+import io.github.erikcaffrey.android_oreo.emoji.EmojiFragment
+import io.github.erikcaffrey.android_oreo.fonts.FontsFragment
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : BaseActivity(), OnNavigationItemSelectedListener {

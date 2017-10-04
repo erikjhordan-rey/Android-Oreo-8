@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.github.erikcaffrey.android_oreo.HomeActivity">
+    tools:context="io.github.erikcaffrey.android_oreo.home.HomeActivity">
 
     <FrameLayout
         android:id="@+id/container"

@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.github.erikcaffrey.android_oreo
+package io.github.erikcaffrey.android_oreo.autosizing
 
 import erikjhordanrey.base_components.view.BaseFragment
+import io.github.erikcaffrey.android_oreo.R
 
-class FontsFragment : BaseFragment() {
-
-    override fun getLayoutResId() = R.layout.fragment_fonts
+class AutosizingFragment : BaseFragment() {
+    override fun getLayoutResId() = R.layout.fragment_autosizing
 }
