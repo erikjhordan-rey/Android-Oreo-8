@@ -58,5 +58,3 @@ class HomeActivity : BaseActivity(), OnNavigationItemSelectedListener {
 
 }
 
-
-
