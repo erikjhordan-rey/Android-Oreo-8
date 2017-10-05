@@ -15,7 +15,7 @@
  */
 package io.github.erikcaffrey.android_oreo.common
 
-class Repository<T>(val dataSource: DataSource<T>) {
+class Repository<out T>(val dataSource: DataSource<T>) {
 
     fun getAll(): List<T> = dataSource.getAll()
 }

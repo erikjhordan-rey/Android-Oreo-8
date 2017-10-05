@@ -15,7 +15,7 @@
  */
 package io.github.erikcaffrey.android_oreo.common
 
-interface DataSource<T> {
+interface DataSource<out T> {
 
     fun getAll(): List<T>
 }
