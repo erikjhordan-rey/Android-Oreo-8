@@ -49,19 +49,14 @@ class HomeActivity : BaseActivity(), OnNavigationItemSelectedListener {
         supportFragmentManager.beginTransaction().replace(R.id.container, fragment).commit()
     }
 
-    private fun getFragment(itemId: Int): Fragment? {
-        var fragment: Fragment? = null
-        when (itemId) {
-            R.id.navigation_fonts -> {
-                fragment = FontsFragment()
-            }
-            R.id.navigation_emoji -> {
-                fragment = EmojiFragment()
-            }
-            R.id.navigation_autosizing -> {
-                fragment = AutosizingFragment()
-            }
-        }
-        return fragment
+    private fun getFragment(itemId: Int): Fragment? = when (itemId) {
+        R.id.navigation_fonts -> FontsFragment()
+        R.id.navigation_emoji -> EmojiFragment()
+        R.id.navigation_autosizing -> AutosizingFragment()
+        else -> null
     }
+
 }
+
+
+
