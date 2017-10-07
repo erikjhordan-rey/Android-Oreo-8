@@ -3,4 +3,18 @@
     <string name="title_fonts">Fonts</string>
     <string name="title_emoji">Emoji</string>
     <string name="title_autosizing">Autosizing</string>
+
+
+    <!-- Autosizing -->
+
+    <string name="autosizing_default">Default</string>
+    <string name="autosizing_granularity">Granularity</string>
+    <string name="autosizing_preset_sizes">Preset Sizes</string>
+    <string name="autosizing_scale_x">Scale X</string>
+    <string name="autosizing_scale_y">Scale Y</string>
+
+    <string name="autosizing_default_disclaimer">Default setting lets the autosizing of TextView scale uniformly on horizontal and vertical axes.</string>
+    <string name="autosizing_granularity_disclaimer">You can define a range of minimum and maximum text sizes and a dimension that specifies the size of each step. The TextView scales uniformly in a range between the minimum and maximum size attributes. Each increment occurs as per the step size set in the granularity attribute.</string>
+    <string name="autosizing_preset_sizes_disclaimer">Preset sizes lets you specify all the values that the TextView picks when automatically auto-sizing text.</string>
+
 </resources>
