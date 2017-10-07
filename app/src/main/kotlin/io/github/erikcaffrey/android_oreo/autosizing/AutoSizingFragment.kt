@@ -23,19 +23,18 @@ import erikjhordanrey.base_components.view.BaseFragment
 import io.github.erikcaffrey.android_oreo.R
 import kotlinx.android.synthetic.main.fragment_autosizing.*
 
-
 class AutoSizingFragment : BaseFragment() {
 
     override fun getLayoutResId() = R.layout.fragment_autosizing
 
     override fun initFragment(view: View) {
         super.initFragment(view)
+        // I have created AutoSizingExt.kt to facilitate & manage Autosizing TextViews programmatically
         initUiAutoSizing()
     }
 
     private fun initUiAutoSizing() {
         seek_bar_scale_x.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-
             override fun onProgressChanged(seekBar: SeekBar, i: Int, b: Boolean) {
                 scaleView(text_default, i)
                 scaleView(text_granularity, i)
