@@ -15,9 +15,6 @@
  */
 package io.github.erikcaffrey.android_oreo.autosizing
 
-import erikjhordanrey.base_components.view.BaseFragment
-import io.github.erikcaffrey.android_oreo.R
-
-class AutosizingFragment : BaseFragment() {
-    override fun getLayoutResId() = R.layout.fragment_autosizing
+enum class Orientation {
+    HORIZONTAL, VERTICAL
 }

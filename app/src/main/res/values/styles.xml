@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="AppTheme.AutoSizingTitle">
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="android:textSize">@dimen/letter_medium</item>
+    </style>
+
+    <style name="AppTheme.AutoSizingSubTitle">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/letter_default</item>
+    </style>
 </resources>

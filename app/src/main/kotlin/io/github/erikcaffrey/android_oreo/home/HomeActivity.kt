@@ -20,7 +20,7 @@ import android.support.v4.app.Fragment
 import android.view.MenuItem
 import erikjhordanrey.base_components.view.BaseActivity
 import io.github.erikcaffrey.android_oreo.R
-import io.github.erikcaffrey.android_oreo.autosizing.AutosizingFragment
+import io.github.erikcaffrey.android_oreo.autosizing.AutoSizingFragment
 import io.github.erikcaffrey.android_oreo.emoji.EmojiFragment
 import io.github.erikcaffrey.android_oreo.fonts.FontsFragment
 import kotlinx.android.synthetic.main.activity_home.*
@@ -52,7 +52,7 @@ class HomeActivity : BaseActivity(), OnNavigationItemSelectedListener {
     private fun getFragment(itemId: Int): Fragment? = when (itemId) {
         R.id.navigation_fonts -> FontsFragment()
         R.id.navigation_emoji -> EmojiFragment()
-        R.id.navigation_autosizing -> AutosizingFragment()
+        R.id.navigation_autosizing -> AutoSizingFragment()
         else -> null
     }
 

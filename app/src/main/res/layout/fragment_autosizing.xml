@@ -1,20 +1,121 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content">
 
-
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:fontFamily="@font/roboto_mono_thin"
-        android:text="@string/title_autosizing"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:paddingLeft="@dimen/space_default"
+        android:paddingRight="@dimen/space_default"
+        tools:context="io.github.erikcaffrey.android_oreo.home.HomeActivity">
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/text_title_default"
+            style="@style/AppTheme.AutoSizingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:text="@string/autosizing_default"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/text_default"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/space_default"
+            android:text="@string/autosizing_default_disclaimer"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_default" />
+
+        <TextView
+            android:id="@+id/text_title_granularity"
+            style="@style/AppTheme.AutoSizingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:text="@string/autosizing_granularity"
+            app:layout_constraintTop_toBottomOf="@+id/text_default" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/text_granularity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/space_default"
+            android:text="@string/autosizing_granularity_disclaimer"
+            app:autoSizeMaxTextSize="34sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_granularity" />
+
+
+        <TextView
+            android:id="@+id/text_title_preset_sizes"
+            style="@style/AppTheme.AutoSizingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:text="@string/autosizing_preset_sizes"
+            android:textSize="@dimen/letter_medium"
+            app:layout_constraintTop_toBottomOf="@+id/text_granularity" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/text_preset_sizes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/space_default"
+            android:text="@string/autosizing_preset_sizes_disclaimer"
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_preset_sizes" />
+
+
+        <TextView
+            android:id="@+id/text_title_scale_x"
+            style="@style/AppTheme.AutoSizingSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_default"
+            android:text="@string/autosizing_scale_x"
+            app:layout_constraintTop_toBottomOf="@+id/text_preset_sizes" />
+
+
+        <SeekBar
+            android:id="@+id/seek_bar_scale_x"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_medium"
+            android:layout_marginTop="@dimen/space_default"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_scale_x" />
+
+
+        <TextView
+            android:id="@+id/text_title_scale_y"
+            style="@style/AppTheme.AutoSizingSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:text="@string/autosizing_scale_y"
+            app:layout_constraintTop_toBottomOf="@+id/seek_bar_scale_x" />
+
+
+        <SeekBar
+            android:id="@+id/seek_bar_scale_y"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_medium"
+            android:layout_marginTop="@dimen/space_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_scale_y" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
