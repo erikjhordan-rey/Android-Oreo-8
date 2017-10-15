@@ -1,19 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:fontFamily="@font/roboto_mono_thin"
-        android:text="@string/title_emoji"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</LinearLayout>
+        android:padding="@dimen/space_default">
+
+        <TextView
+            android:id="@+id/text_title_emoji"
+            style="@style/AppTheme.OreoSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/emoji_text_view"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <android.support.text.emoji.widget.EmojiAppCompatTextView
+            android:id="@+id/text_emoji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:text="@string/emoji_text_view_text"
+            app:layout_constraintTop_toBottomOf="@id/text_title_emoji" />
+
+        <TextView
+            android:id="@+id/edit_title_emoji"
+            style="@style/AppTheme.OreoSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:text="@string/emoji_edit_text"
+            app:layout_constraintTop_toBottomOf="@id/text_emoji" />
+
+        <android.support.text.emoji.widget.EmojiAppCompatEditText
+            android:id="@+id/edit_emoji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:hint="@string/emoji_edit_text_text"
+            app:layout_constraintTop_toBottomOf="@+id/edit_title_emoji" />
+
+        <TextView
+            android:id="@+id/button_title_emoji"
+            style="@style/AppTheme.OreoSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:text="@string/emoji_button"
+            app:layout_constraintTop_toBottomOf="@id/edit_emoji" />
+
+        <android.support.text.emoji.widget.EmojiAppCompatButton
+            android:id="@+id/button_emoji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:text="@string/emoji_button_text"
+            app:layout_constraintTop_toBottomOf="@+id/button_title_emoji" />
+
+        <TextView
+            android:id="@+id/text_title_regular"
+            style="@style/AppTheme.OreoSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:text="@string/emoji_regular"
+            app:layout_constraintTop_toBottomOf="@id/button_emoji" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/text_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:text="@string/emoji_regular_text"
+            app:layout_constraintTop_toBottomOf="@id/text_title_regular" />
+
+        <TextView
+            android:id="@+id/text_title_custom"
+            style="@style/AppTheme.OreoSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:text="@string/emoji_custom"
+            app:layout_constraintTop_toBottomOf="@id/text_regular" />
+
+        <io.github.erikcaffrey.android_oreo.emoji.CustomEmojiTextView
+            android:id="@+id/text_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:text="@string/emoji_regular_text"
+            app:layout_constraintTop_toBottomOf="@id/text_title_custom" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

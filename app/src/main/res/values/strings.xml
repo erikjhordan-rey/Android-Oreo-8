@@ -4,9 +4,20 @@
     <string name="title_emoji">Emoji</string>
     <string name="title_autosizing">Autosizing</string>
 
+    <!-- Emoji -->
+    <string name="emoji_text_view">Emoji TextView</string>
+    <string name="emoji_edit_text">Emoji EditText</string>
+    <string name="emoji_button">Emoji Button</string>
+    <string name="emoji_regular">Regular TextView</string>
+    <string name="emoji_custom">Custom TextView</string>
+
+    <string name="emoji_text_view_text">%s for brunch? </string>
+    <string name="emoji_edit_text_text">Hello %s, How are you?</string>
+    <string name="emoji_button_text">Force Mexico %s</string>
+    <string name="emoji_regular_text">Where Are Arctic Monkeys? %s</string>
+    <string name="emoji_custom_text">I am a custom view %s</string>
 
     <!-- Autosizing -->
-
     <string name="autosizing_default">Default</string>
     <string name="autosizing_granularity">Granularity</string>
     <string name="autosizing_preset_sizes">Preset Sizes</string>

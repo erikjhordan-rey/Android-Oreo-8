@@ -13,7 +13,7 @@
 
         <TextView
             android:id="@+id/text_title_default"
-            style="@style/AppTheme.AutoSizingTitle"
+            style="@style/AppTheme.OreoTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_medium"
@@ -31,7 +31,7 @@
 
         <TextView
             android:id="@+id/text_title_granularity"
-            style="@style/AppTheme.AutoSizingTitle"
+            style="@style/AppTheme.OreoTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_medium"
@@ -53,7 +53,7 @@
 
         <TextView
             android:id="@+id/text_title_preset_sizes"
-            style="@style/AppTheme.AutoSizingTitle"
+            style="@style/AppTheme.OreoTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_medium"
@@ -75,7 +75,7 @@
 
         <TextView
             android:id="@+id/text_title_scale_x"
-            style="@style/AppTheme.AutoSizingSubTitle"
+            style="@style/AppTheme.OreoSubTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_default"
@@ -97,7 +97,7 @@
 
         <TextView
             android:id="@+id/text_title_scale_y"
-            style="@style/AppTheme.AutoSizingSubTitle"
+            style="@style/AppTheme.OreoSubTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_medium"
