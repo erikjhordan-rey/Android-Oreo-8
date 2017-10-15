@@ -6,15 +6,16 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
     </style>
 
 
-    <style name="AppTheme.AutoSizingTitle">
+    <style name="AppTheme.OreoTitle">
         <item name="android:textColor">@android:color/primary_text_light</item>
         <item name="android:textSize">@dimen/letter_medium</item>
     </style>
 
-    <style name="AppTheme.AutoSizingSubTitle">
+    <style name="AppTheme.OreoSubTitle">
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textSize">@dimen/letter_default</item>
     </style>
