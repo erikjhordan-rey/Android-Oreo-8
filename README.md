@@ -12,6 +12,7 @@ List of Samples contained on the Project
 - [Emoji Compatibility](https://developer.android.com/guide/topics/ui/look-and-feel/emoji-compat.html)
 - [Autosizing textview](https://developer.android.com/guide/topics/ui/look-and-feel/autosizing-textview.html)
 - [Adaptive icons](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive.html)
+- [Picture-in-picture Support](https://developer.android.com/guide/topics/ui/picture-in-picture.html)
 
 Do you want to contribute?
 --------------------------

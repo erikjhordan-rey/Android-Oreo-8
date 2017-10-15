@@ -3,6 +3,7 @@
     <string name="title_fonts">Fonts</string>
     <string name="title_emoji">Emoji</string>
     <string name="title_autosizing">Autosizing</string>
+    <string name="title_pip">Picture in Picture</string>
 
     <!-- Emoji -->
     <string name="emoji_text_view">Emoji TextView</string>
