@@ -68,7 +68,7 @@
             app:layout_constraintTop_toBottomOf="@id/button_emoji" />
 
         <android.support.v7.widget.AppCompatTextView
-            android:id="@+id/text_regular"
+            android:id="@+id/text_emoji_regular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_medium"
@@ -82,10 +82,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_medium"
             android:text="@string/emoji_custom"
-            app:layout_constraintTop_toBottomOf="@id/text_regular" />
+            app:layout_constraintTop_toBottomOf="@id/text_emoji_regular" />
 
         <io.github.erikcaffrey.android_oreo.emoji.CustomEmojiTextView
-            android:id="@+id/text_custom"
+            android:id="@+id/text_emoji_custom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_medium"

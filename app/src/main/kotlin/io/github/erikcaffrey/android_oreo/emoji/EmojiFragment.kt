@@ -38,8 +38,8 @@ class EmojiFragment : BaseFragment() {
         text_emoji.text = getString(R.string.emoji_text_view_text, AVOCADO_EMOJI)
         edit_emoji.setText(getString(R.string.emoji_edit_text_text, WINK_EMOJI))
         button_emoji.text = getString(R.string.emoji_button_text, FLAG_EMOJI)
-        val emojiTextViewCallback = EmojiTextViewCallback(text_regular, getString(R.string.emoji_regular_text, MONKEYS_EMOJI))
+        val emojiTextViewCallback = EmojiTextViewCallback(text_emoji_regular, getString(R.string.emoji_regular_text, MONKEYS_EMOJI))
         EmojiCompat.get().registerInitCallback(emojiTextViewCallback)
-        text_custom.text = getString(R.string.emoji_custom_text, HEART_EYES_EMOJI)
+        text_emoji_custom.text = getString(R.string.emoji_custom_text, HEART_EYES_EMOJI)
     }
 }

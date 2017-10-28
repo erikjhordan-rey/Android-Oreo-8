@@ -21,7 +21,7 @@ import java.lang.ref.WeakReference
 
 class EmojiTextViewCallback constructor(regularTextView: TextView, val text: String) : EmojiCompat.InitCallback() {
 
-    val regularTextViewReference: WeakReference<TextView> = WeakReference(regularTextView)
+    private val regularTextViewReference: WeakReference<TextView> = WeakReference(regularTextView)
 
     override fun onInitialized() {
         super.onInitialized()
