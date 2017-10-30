@@ -5,6 +5,11 @@
     <string name="title_autosizing">Autosizing</string>
     <string name="title_pip">Picture in Picture</string>
 
+    <!-- Fonts -->
+    <string name="fonts_download">Apply</string>
+    <string name="fonts_downloadable">Downloadable Fonts</string>
+    <string name="fonts_disclaimer">“Clean code always looks like it was written by someone who cares. by Michael Feathers”</string>
+
     <!-- Emoji -->
     <string name="emoji_text_view">Emoji TextView</string>
     <string name="emoji_edit_text">Emoji EditText</string>
