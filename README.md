@@ -1,4 +1,4 @@
-# What’s new in Android 8.0 for developers?  (work-in-progress 👷🔧️👷‍♀️⛏)
+# What’s new in Android 8.0 for developers?
 
 ![](./art/oreo.png)
 
@@ -9,6 +9,7 @@ The main goal show the most relevant features of android oreo.
 List of Samples contained on the Project
 ----------------------------------------
 - [Fonts in XML](https://developer.android.com/guide/topics/ui/look-and-feel/fonts-in-xml.html)
+- [Downloadable Fonts](https://developer.android.com/guide/topics/ui/look-and-feel/downloadable-fonts.html)
 - [Emoji Compatibility](https://developer.android.com/guide/topics/ui/look-and-feel/emoji-compat.html)
 - [Autosizing textview](https://developer.android.com/guide/topics/ui/look-and-feel/autosizing-textview.html)
 - [Adaptive icons](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive.html)
