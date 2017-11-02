@@ -15,6 +15,13 @@ List of Samples contained on the Project
 - [Adaptive icons](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive.html)
 - [Picture-in-picture Support](https://developer.android.com/guide/topics/ui/picture-in-picture.html)
 
+
+Demo
+----
+
+<img src="./art/oreo-8.png" width="800" height="500">
+
+
 Do you want to contribute?
 --------------------------
 Feel free to report or add any useful feature, I will be glad to improve it with your help, before submitting your code please check the [codestyle](https://github.com/square/java-code-styles).
