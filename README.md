@@ -6,6 +6,13 @@ Project Goal
 ---------------------------
 The main goal show the most relevant features of android oreo.
 
+Slides
+-------
+
+[My android Talk on Mobile Day 2017](https://speakerdeck.com/erikcaffrey/android-oreo-behind-scenes).
+
+
+
 List of Samples contained on the Project
 ----------------------------------------
 - [Fonts in XML](https://developer.android.com/guide/topics/ui/look-and-feel/fonts-in-xml.html)
