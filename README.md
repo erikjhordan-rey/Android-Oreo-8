@@ -46,7 +46,7 @@ easily fix it by running: `./gradlew spotlessApply`, or running IntelliJ/Android
 Developed By
 ------------
 
-* Erik Jhordan Rey  - <erikcaffrey10@gmail.com> o <erik.gonzalez@schibsted.com.mx>
+* Erik Jhordan Rey  - <erikjhordan.rey@gmail.com> o <erik.gonzalez@schibsted.com.mx>
 
 License
 -------
